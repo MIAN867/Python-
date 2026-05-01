@@ -332,23 +332,34 @@
 # item = [1,2,3,4,5,6]
 # random.shuffle(item)
 # print(item)
-import random
-words = ["python","java","html","css","php"]
-selected_words= random.choice(words)
-hidden = []
-for letter in selected_words:
-    hidden.append("-")
-print(hidden)
-guess = input("Guess a letter : ")
-if guess in selected_words:
-    print("correct")
-else:
-    print("wrong!")
-for i in range(len(selected_words)):
-    if selected_words[i] == guess:
-        hidden[i] = guess
-print(hidden)
+# import random
+# words = ["python","java","html","css","php"]
+# selected_words= random.choice(words)
+# hidden = []
+# for letter in selected_words:
+#     hidden.append("-")
+# print(hidden)
+# lives = 6
+
+# while lives > 0:
+#     guess = input("Guess a letter: ")
     
+#     if guess in selected_words:
+#         print("Correct!")
+#         for i in range(len(selected_words)):
+#             if selected_words[i] == guess:
+#                 hidden[i] = guess
+#         print(hidden)
+#         if "-" not in hidden:
+#             print("You Win!")
+#             print(f"Word was: {selected_words}")
+#             break
+#     else:
+#         lives -= 1
+#         print(f"Wrong! Lives left: {lives}")
+#         if lives == 0:
+#             print("Game Over!")   
+           
 
 
 # import random
@@ -359,3 +370,51 @@ print(hidden)
 # print("Stored word:", selected_word)
 # print("New call:", random.choice(words))
 # print("New call:", random.choice(words))
+
+# while True:
+#     message= input("you: ")
+#     if message == "hello":
+#         print(" Bot: hi There!")
+#     elif message == "bye":
+    
+#         print("Bot: Good bye")
+#         break 
+#     elif message== "how are you?":
+#         print("i am fine!")
+#     elif message=="what is your name":
+#         print("i am a pyBot!")
+#     elif message=="age":
+#         print("i am a bot _ no age!")
+#     else:
+#         print("Bot: i don't understand!")
+# stock = {"AAPl":180,"TSLA":280,"GOOGL":300}
+# while True:
+#     name = input("enter the name : ")
+#     if name == "done":
+#         break
+#     Quantity= int(input("Enter the Quantity :"))
+#     if name in stock:
+#      price = stock[name]
+#      total = price * Quantity
+#      print("name",name)
+#      print("price",price)
+#      print("Quantity",Quantity)
+#      print("Total",total)
+#     else:
+#      print("stock is not found : ")
+stock = {"apple":200,"banana":150,"orange":300}
+while True:
+    name = input("enter the name : ")
+    if name == "done":
+        break
+    Quantity = int(input("enter your quantity : "))
+    if name in stock:
+        price = stock [name]
+        total = price * Quantity
+        print("name ",name)
+        print("price",price)
+        print("quantity",Quantity)
+        print("total",total)
+    else:
+        print("stock is not found ...")
+    
