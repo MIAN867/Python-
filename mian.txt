@@ -1,7 +1,0 @@
- name :Mian mudassar
-age  : 21 - 77
- phone: 335556666656
-city : shahkot 
-degree:bscs
-district : nankanasahib
-city ; abc
